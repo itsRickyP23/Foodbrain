@@ -22,7 +22,7 @@ nav .navbar{
     align-items: center;
     justify-content: space-between;
 }
-nav .navbar .logo{
+nav .navbar .logo a{
     font-size: 40px;
     font-weight: 500;
     color: rgba(96, 211, 148);
