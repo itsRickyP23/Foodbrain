@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodbrain</title>
-    <link rel="shortcut icon" href="images/logoTransparent.png" />
-    <link rel="stylesheet" href="style.css"/>
-    <button type="button">Click Me!</button>
+    <!-- FontAwesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link id="theme" rel="stylesheet" type="text/css" href="style.css" />
+    <link id="favicon" rel="shortcut icon" href="images/logoLightMode.png" />
+    <script src="stylesheet.js" defer></script>
   </head>
   <body>
-    <script>
-      window
-        .matchMedia("(prefers-color-scheme: dark)")
-        .addEventListener("change", (e) => {
-        //   const newColorScheme = e.matches ? "dark" : "light";
-        console.log("bruh");
-        });
-    </script>
     <!-- Navigation Menu-->
     <header>
       <nav>
         <div class="navbar">
-          <img src="images/logoTransparent.png" id="navlogo" />
+          <!-- <div class= "navlogo"><img src="images/logoTransparent.png"/></div> -->
+          <!-- The Logo Name is temporary cuz its real hard to size the freaking logo image in a nav bar -->
+          <div class="logo"><a href="#">FoodBrain</a></div>
           <ul class="menu">
             <li><a href="#mealplanner">Meal Planner</a></li>
             <li><a href="#browse">Browse Recipes</a></li>
@@ -30,12 +30,17 @@
             <li><a href="#photos">Photos</a></li>
             <li><a href="#blog">Blog</a></li>
           </ul>
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
       </nav>
     </header>
     <main></main>
-    <footer>
+    <!-- <footer>
       <p>©2021 Foodbrain. All rights reversed.</p>
-    </footer>
+    </footer> -->
   </body>
 </html>

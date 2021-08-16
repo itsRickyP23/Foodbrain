@@ -1,0 +1,10 @@
+img{
+    width: 3%;
+}
+
+/*Navigation Menu CSS */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+}

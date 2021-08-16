@@ -1,7 +1,46 @@
-img{
-    width: 3%;
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
+/*Navigation Menu CSS */
 nav {
-    psoti
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+nav .navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navbar .logo{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgba(96, 211, 148);
+}
+
+nav .navbar .menu{
+    display: flex;
+}
+nav .navbar .menu li{
+    margin: 0 8px;
+    list-style: none;
+    /* Center navigation font customizer thingy */
+    font-size: 18px;
+    font-size: 500;
+    color: rgba(255, 217, 125);
+}
+.navbar .media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: rgba(96, 211, 148);
 }
