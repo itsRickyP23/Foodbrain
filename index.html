@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodbrain</title>
+    <link rel="shortcut icon" href="images/logoTransparent.png" />
+    <link rel="stylesheet" href="style.css"/>
+    <button type="button">Click Me!</button>
+  </head>
+  <body>
+    <script>
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+        //   const newColorScheme = e.matches ? "dark" : "light";
+        console.log("bruh");
+        });
+    </script>
+    <!-- Navigation Menu-->
+    <header>
+      <nav>
+        <div class="navbar">
+          <img src="images/logoTransparent.png" id="navlogo" />
+          <ul class="menu">
+            <li><a href="#mealplanner">Meal Planner</a></li>
+            <li><a href="#browse">Browse Recipes</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer>
+      <p>©2021 Foodbrain. All rights reversed.</p>
+    </footer>
+  </body>
+</html>
