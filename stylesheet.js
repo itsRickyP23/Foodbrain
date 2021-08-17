@@ -22,13 +22,13 @@ window
   });
 
 function lightMode() {
-  theme.setAttribute("href", "style.css");
+  theme.setAttribute("href", "styleLight.css");
   favicon.setAttribute("href", "images/logoLightMode.png");
   console.log("light");
 }
 
 function darkMode() {
-  theme.setAttribute("href", "style.css");
+  theme.setAttribute("href", "styleLight.css");
   favicon.setAttribute("href", "images/logoDarkMode.png");
   console.log("dark");
 }
