@@ -9,12 +9,17 @@
 
 /*Navigation Menu CSS */
 nav {
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
   padding: 20px 0;
+  transition: all 0.4s ease;
   font-family: "Ubuntu", "sans-serif";
 }
+nav.sticky {
+  padding: 13px 0;
+  background: rgb(96, 211, 148);
 
+}
 nav .navbar {
   width: 90%;
   margin: auto;
@@ -27,7 +32,9 @@ nav .navbar .logo a {
   font-weight: 500;
   color: rgb(96, 211, 148);
 }
-
+nav.sticky .navbar .logo a{
+  color: white;
+}
 nav .navbar .menu {
   display: flex;
 }
@@ -40,10 +47,16 @@ nav .navbar .menu li a {
   font-size: 500;
   color: rgb(82, 182, 154);
 }
+nav.sticky .navbar .menu li a{
+  color: white;
+}
 .navbar .login a {
   font-size: 40px;
   margin: 0 6px;
   color: rgb(96, 211, 148);
+}
+nav.sticky .navbar .login a{
+    color: white;
 }
 /* Side Nav Menu Button CSS*/
 nav .menu-btn,
@@ -138,6 +151,12 @@ nav .menu-btn {
   .navbar .cancel-btn {
     display: block;
   }
+  .home .text .text-one{
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 510px) {
   .home .text .text-one{
     font-size: 55px;
   }
