@@ -32,31 +32,57 @@ nav .navbar .menu {
   display: flex;
 }
 nav .navbar .menu li {
-  margin: 0 8px;
   list-style: none;
-  /* Center navigation font customizer thingy */
+  margin: 0 8px;
+}
+nav .navbar .menu li a {
   font-size: 18px;
   font-size: 500;
-  color: rgba(255, 217, 125);
+  color: rgba(82, 182, 154);
 }
 .navbar .login a {
   font-size: 40px;
   margin: 0 6px;
   color: rgba(96, 211, 148);
 }
-
+/* Side Nav Menu Button CSS*/
+nav .menu-btn,
+.navbar .cancel-btn {
+  position: absolute;
+  color: rgb(255, 255, 194);
+  font-size: 20px;
+  right: 30px;
+  top: 20px;
+}
+nav .menu-btn {
+  color: rgb(82, 182, 154);
+}
 /* Responsive Media Query CSS */
 @media (max-width: 750px) {
   nav .navbar .menu {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 0;
+    left: -100%;
     top: 0;
     height: 100vh;
     max-width: 400px;
     width: 100%;
     background: rgba(96, 211, 148);
     padding-top: 60px;
+    transition: all 0.5s ease;
+  }
+  nav .navbar.active .menu {
+    left: 0;
+  }
+  nav .navbar .menu li a {
+    margin: 10px 0;
+    display: block;
+    font-size: 23px;
+    color: rgba(255, 255, 194);
+    list-style: none;
+  }
+  .navbar .login a {
+    display: none;
   }
 }
