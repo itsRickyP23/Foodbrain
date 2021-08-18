@@ -21,7 +21,7 @@
     <script src="stylesheet.js" defer></script>
     <script src="mealPlanner.js"></script>
   </head>
-  <body>
+  <body id="meal-planner">
     <!-- Navigation Menu-->
     <header>
       <nav>
@@ -44,76 +44,77 @@
         <div class="menu-btn"><i class="fas fa-bars"></i></div>
       </nav>
     </header>
+    <div id="blankrefer"></div>
 
     <!-- Monthly Calender W3Schools-->
-    <style>
-      * {box-sizing: border-box;}
-      ul {list-style-type: none;}
-      body {font-family: Verdana, sans-serif;}
+      <style>
+        * {box-sizing: border-box;}
+        ul {list-style-type: none;}
+        body {font-family: Verdana, sans-serif;}
       
-      .month {
-        padding: 70px 25px;
-        width: 100%;
-        background: rgb(96, 211, 148);
-        text-align: center;
-      }
+        .month {
+          padding: 70px 25px;
+          width: 100%;
+          background: rgb(96, 211, 148);
+          text-align: center;
+        }
       
-      .month ul {
-        margin: 0;
-        padding: 0;
-      }
+        .month ul {
+          margin: 0;
+          padding: 0;
+        }
       
-      .month ul li {
-        color: white;
-        font-size: 20px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-      }
+        .month ul li {
+         color: white;
+          font-size: 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
       
-      .month .prev {
-        float: left;
-        padding-top: 10px;
-      }
+        .month .prev {
+         float: left;
+         padding-top: 10px;
+        }
       
-      .month .next {
-        float: right;
-        padding-top: 10px;
-      }
+        .month .next {
+         float: right;
+          padding-top: 10px;
+       }
       
-      .weekdays {
-        margin: 0;
-        padding: 10px 0;
-        background-color: #ddd;
-      }
+        .weekdays {
+         margin: 0;
+         padding: 10px 0;
+         background-color: #ddd;
+       }
       
-      .weekdays li {
-        display: inline-block;
+       .weekdays li {
+         display: inline-block;
         width: 13.6%;
-        color: #666;
-        text-align: center;
-      }
+         color: #666;
+          text-align: center;
+        }
       
-      .dayContainer {
-        padding: 10px 0;
-        background: #eee;
-        margin: 0;
-      }
+       .dayContainer {
+          padding: 10px 0;
+          background: #eee;
+          margin: 0;
+       }
       
-      .days {
-        list-style-type: none;
-        display: inline-block;
-        width: 13.6%;
-        text-align: center;
-        margin-bottom: 5px;
-        font-size:12px;
-        color: #777;
-      }
+       .days {
+          list-style-type: none;
+         display: inline-block;
+         width: 13.6%;
+         text-align: center;
+         margin-bottom: 5px;
+         font-size:12px;
+          color: #777;
+        }
       
-      .days:hover {
-        background: rgb(96, 211, 148);
-        color: white !important
-      }
-      </style>
+       .days:hover {
+         background: rgb(96, 211, 148);
+         color: white !important
+        }
+     </style>
       </head>
       <body>
             

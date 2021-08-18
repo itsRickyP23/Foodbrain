@@ -7,18 +7,23 @@
   text-decoration: none;
 }
 
+.blankrefer {
+  position: relative;
+  top: -50px;
+}
 /*Navigation Menu CSS */
 nav {
-  /*position: fixed;*/
+  position: fixed;
   width: 100%;
   padding: 20px 0;
   transition: all 0.4s ease;
   font-family: "Ubuntu", "sans-serif";
+  background: white;
+  z-index: 0;
 }
 nav.sticky {
   padding: 13px 0;
   background: rgb(96, 211, 148);
-
 }
 nav .navbar {
   width: 90%;
@@ -27,14 +32,18 @@ nav .navbar {
   align-items: center;
   justify-content: space-between;
 }
+
+/* FoodBrain Logo */
 nav .navbar .logo a {
   font-size: 40px;
   font-weight: 500;
   color: rgb(96, 211, 148);
 }
-nav.sticky .navbar .logo a{
+nav.sticky .navbar .logo a {
   color: white;
 }
+
+/* Center Menu */
 nav .navbar .menu {
   display: flex;
 }
@@ -46,18 +55,28 @@ nav .navbar .menu li a {
   font-size: 18px;
   font-size: 500;
   color: rgb(82, 182, 154);
+  transition: all 0.3s ease;
 }
-nav.sticky .navbar .menu li a{
+nav .navbar .menu li a:hover {
+  color: rgb(22, 138, 173);
+}
+nav.sticky .navbar .menu li a {
   color: white;
 }
+nav.sticky .navbar .menu li a:hover {
+  color: rgb(52, 160, 164);
+}
+
+/* Sign In Button */
 .navbar .login a {
   font-size: 40px;
   margin: 0 6px;
   color: rgb(96, 211, 148);
 }
-nav.sticky .navbar .login a{
-    color: white;
+nav.sticky .navbar .login a {
+  color: white;
 }
+
 /* Side Nav Menu Button CSS*/
 nav .menu-btn,
 .navbar .cancel-btn {
@@ -67,7 +86,7 @@ nav .menu-btn,
   right: 30px;
   top: 20px;
   display: none;
-} 
+}
 
 /* Home Page Section CSS */
 .home {
@@ -81,25 +100,25 @@ nav .menu-btn,
 }
 .home .home-content {
   height: 100%;
-  width: 90%; 
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.home .text .text-one{
+.home .text .text-one {
   font-size: 75px;
   font-weight: 600;
   color: rgb(82, 182, 154);
   text-align: end;
   padding-right: 300px;
 }
-.home .button{
+.home .button {
   margin-right: 545px;
   text-align: right;
   padding-right: 300;
 }
-.home .button button{
+.home .button button {
   outline: none;
   color: rgb(255, 255, 194);
   background: rgb(96, 211, 148);
@@ -110,15 +129,16 @@ nav .menu-btn,
   border-radius: 5px;
   transition: all 0.4s ease;
 }
-.home .button button:hover{
+.home .button button:hover {
   background: rgb(96, 211, 148);
   background-color: white;
-  border-color:rgb(96, 211, 148);
+  border-color: rgb(96, 211, 148);
   color: rgb(96, 211, 148);
 }
 nav .menu-btn {
   color: rgb(82, 182, 154);
 }
+
 /* Responsive Media Query CSS */
 @media (max-width: 750px) {
   nav .navbar .menu {
@@ -151,13 +171,18 @@ nav .menu-btn {
   .navbar .cancel-btn {
     display: block;
   }
-  .home .text .text-one{
+  .home .text .text-one {
     font-size: 65px;
   }
 }
 
 @media (max-width: 510px) {
-  .home .text .text-one{
+  .home .text .text-one {
     font-size: 55px;
   }
+}
+
+#meal-planner .blankrefer {
+  position: relative;
+  top: -50px;
 }
