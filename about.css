@@ -1,0 +1,130 @@
+html body#about-page div#blankrefer {
+  padding-top: 100px;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(82, 182, 154);
+  margin: 8px;
+  text-align: center;
+  padding: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color:#60d394;
+  color: white;
+  font-family: 'Ubuntu';
+}
+
+h2#ourteamtext{
+    font-family: 'Ubuntu';
+    font-size: 32px;
+    text-align: center;
+    padding-top: 50px;
+}
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h2.names{
+  font-size: 24px;
+}
+.title {
+  color: grey;
+}
+
+.button {
+  /*border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  background-color: rgb(82, 182, 154);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 0 6px;
+  color: rgb(96, 211, 148);*/
+  font-size: 18px;
+  margin: 0 6px;
+  color: white;
+  background: rgb(96, 211, 148);
+  border-radius: 10px;
+  padding: 6px;
+  font-family: 'Ubuntu';
+}
+
+.button:hover {
+  background-color: rgb(82, 182, 154);
+  color: white;
+  outline: 5px;
+  transition: all 0.4s ease;
+}
+
+.teamphoto {
+  width:100%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 10px;
+}
+.teamphoto:hover{
+  width: 275px;
+  height: 275px;
+  transition: all 0.4s ease;
+}
+
+.mission-section {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* Footer Section CSS */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  background: rgb(96, 211, 148);
+  padding-left: 15px 0;
+}
+footer .text span{
+  color: #303036;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 750px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}

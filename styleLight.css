@@ -10,6 +10,7 @@
 html body#home-page div#blankrefer {
   padding-top: 100px;
 }
+
 /*Navigation Menu CSS */
 nav {
   position: fixed;
@@ -32,12 +33,18 @@ nav .navbar {
   justify-content: space-between;
 }
 
+nav .navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
 /* FoodBrain Logo */
 nav .navbar .logo a {
   font-size: 40px;
   font-weight: 500;
   color: rgb(96, 211, 148);
 }
+
 nav.sticky .navbar .logo a {
   color: white;
 }
@@ -119,7 +126,7 @@ nav .menu-btn,
 }
 .home .button button {
   outline: none;
-  color: rgb(255, 255, 194);
+  color: white;
   background: rgb(96, 211, 148);
   font-size: 25px;
   font-weight: 500;
@@ -137,9 +144,19 @@ nav .menu-btn,
 nav .menu-btn {
   color: rgb(82, 182, 154);
 }
-html body#meal-planner div#blankrefer {
-  padding-top: 100px;
+
+/* Footer Section CSS */
+footer {
+  text-align: center;
+  background: rgb(96, 211, 148);
+  padding-left: 15px 0;
 }
+footer .text span{
+  color: #303036;
+  font-size: 17px;
+  font-weight: 500;
+}
+
 /* Responsive Media Query CSS */
 @media (max-width: 750px) {
   nav .navbar .menu {

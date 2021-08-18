@@ -9,8 +9,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-
     <link id="theme" rel="stylesheet" type="text/css" href="styleLight.css" />
+    <link
+      id="calenderLayout"
+      rel="stylesheet"
+      type="text/css"
+      href="mealPlanner.css"
+    />
     <link id="favicon" rel="shortcut icon" href="images/logoLightMode.png" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
@@ -19,20 +24,23 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="stylesheet.js" defer></script>
-    <script src="mealPlanner.js"></script>
+    <script src="mealPlanner.js" defer></script>
   </head>
-  <body id="meal-planner">
+  <body>
     <!-- Navigation Menu-->
     <header>
       <nav>
         <div class="navbar">
           <!-- <div class= "navlogo"><img src="images/logoTransparent.png" alt="Foodbrain Logo"/></div> -->
           <!-- The Logo Name is temporary cuz its real hard to size the freaking logo image in a nav bar -->
-          <div class="logo"><a href="/index.html">Foodbrain</a></div>
+          <div class="logo">
+            <img src="images/logoTheme.png" alt="Foodbrain Logo" style="width: 50px;" id="brain"/>
+            <a href="index.html">Foodbrain</a>
+          </div>
           <ul class="menu">
-            <li><a href="#">Meal Planner</a></li>
-            <li><a href="#browse">Browse Recipes</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="mealPlanner.html">Meal Planner</a></li>
+            <li><a href="/about.html">About Us</a></li>
             <li><a href="#photos">Photos</a></li>
             <li><a href="#blog">Blog</a></li>
             <div class="cancel-btn"><i class="fas fa-times"></i></div>
@@ -43,134 +51,84 @@
         </div>
         <div class="menu-btn"><i class="fas fa-bars"></i></div>
       </nav>
+      <div id="blankrefer"></div>
     </header>
-    <div id="blankrefer"></div>
+    <main>
+      <div class="calender">
+        <div class="month">
+          <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>
+              August<br />
+              <span style="font-size: 18px">2021</span>
+            </li>
+          </ul>
+        </div>
 
-    <!-- Monthly Calender W3Schools-->
-      <style>
-        * {box-sizing: border-box;}
-        ul {list-style-type: none;}
-        body {font-family: Verdana, sans-serif;}
-      
-        .month {
-          padding: 70px 25px;
-          width: 100%;
-          background: rgb(96, 211, 148);
-          text-align: center;
-        }
-      
-        .month ul {
-          margin: 0;
-          padding: 0;
-        }
-      
-        .month ul li {
-         color: white;
-          font-size: 20px;
-          text-transform: uppercase;
-          letter-spacing: 3px;
-        }
-      
-        .month .prev {
-         float: left;
-         padding-top: 10px;
-        }
-      
-        .month .next {
-         float: right;
-          padding-top: 10px;
-       }
-      
-        .weekdays {
-         margin: 0;
-         padding: 10px 0;
-         background-color: #ddd;
-       }
-      
-       .weekdays li {
-         display: inline-block;
-        width: 13.6%;
-         color: #666;
-          text-align: center;
-        }
-      
-       .dayContainer {
-          padding: 10px 0;
-          background: #eee;
-          margin: 0;
-       }
-      
-       .days {
-          list-style-type: none;
-         display: inline-block;
-         width: 13.6%;
-         text-align: center;
-         margin-bottom: 5px;
-         font-size:12px;
-          color: #777;
-        }
-      
-       .days:hover {
-         background: rgb(96, 211, 148);
-         color: white !important
-        }
-     </style>
-      </head>
-      <body>
-            
-      <div class="month">      
-        <ul>
-          <li class="prev">&#10094;</li>
-          <li class="next">&#10095;</li>
-          <li>
-            August<br>
-            <span style="font-size:18px">2021</span>
-          </li>
+        <ul class="weekdays">
+          <li>Su</li>
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+        </ul>
+
+        <ul class="dayContainer">
+          <li class="days">1</li>
+          <li class="days">2</li>
+          <li class="days">3</li>
+          <li class="days">4</li>
+          <li class="days">5</li>
+          <li class="days">6</li>
+          <li class="days">7</li>
+          <li class="days">8</li>
+          <li class="days">9</li>
+          <li class="days">10</li>
+          <li class="days">11</li>
+          <li class="days">12</li>
+          <li class="days">13</li>
+          <li class="days">14</li>
+          <li class="days">15</li>
+          <li class="days">16</li>
+          <li class="days">17</li>
+          <li class="days">18</li>
+          <li class="days">19</li>
+          <li class="days">20</li>
+          <li class="days">21</li>
+          <li class="days">22</li>
+          <li class="days">23</li>
+          <li class="days">24</li>
+          <li class="days">25</li>
+          <li class="days">26</li>
+          <li class="days">27</li>
+          <li class="days">28</li>
+          <li class="days">29</li>
+          <li class="days">30</li>
+          <li class="days">31</li>
         </ul>
       </div>
-      
-      <ul class="weekdays">
-        <li>Su</li>
-        <li>Mo</li>
-        <li>Tu</li>
-        <li>We</li>
-        <li>Th</li>
-        <li>Fr</li>
-        <li>Sa</li>
-      </ul>
-      
-      <ul class="dayContainer">  
-        <li class = "days">1</li>
-        <li class = "days">2</li>
-        <li class = "days">3</li>
-        <li class = "days">4</li>
-        <li class = "days">5</li>
-        <li class = "days">6</li>
-        <li class = "days">7</li>
-        <li class = "days">8</li>
-        <li class = "days">9</li>
-        <li class = "days">10</li>
-        <li class = "days">11</li>
-        <li class = "days">12</li>
-        <li class = "days">13</li>
-        <li class = "days">14</li>
-        <li class = "days">15</li>
-        <li class = "days">16</li>
-        <li class = "days">17</li>
-        <li class = "days">18</li>
-        <li class = "days">19</li>
-        <li class = "days">20</li>
-        <li class = "days">21</li>
-        <li class = "days">22</li>
-        <li class = "days">23</li>
-        <li class = "days">24</li>
-        <li class = "days">25</li>
-        <li class = "days">26</li>
-        <li class = "days">27</li>
-        <li class = "days">28</li>
-        <li class = "days">29</li>
-        <li class = "days">30</li>
-        <li class = "days">31</li>
-      </ul>
+      <div class="planningPanel">
+        <h1>Plan your meals:</h1>
+        <br /><br />
+        <h2>Search for a...</h2>
+        <br />
+        <input id="recipeSearch" type="text" placeholder="Search..." />
+        <br />
+        <div class="recipeModal">
+          <div class="modalContent">
+            <span class="close">&times;</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer Section  -->
+    <footer>
+      <div class="text">
+        <span> &copy;2021 Foodbrain. All rights reversed.</span>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,5 +1,6 @@
 var theme = document.getElementById("theme");
 var favicon = document.getElementById("favicon");
+var logo = document.getElementById("brain");
 
 if (
   window.matchMedia &&
@@ -52,8 +53,10 @@ let nav = document.querySelector("nav");
 let val;
 window.onscroll = function () {
   if (document.documentElement.scrollTop > 20) {
+    logo.setAttribute("src", "images/logoDarkMode.png");
     nav.classList.add("sticky");
   } else {
+    logo.setAttribute("src", "images/logoTheme.png");
     nav.classList.remove("sticky");
   }
 };
