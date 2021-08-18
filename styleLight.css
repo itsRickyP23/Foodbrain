@@ -7,9 +7,8 @@
   text-decoration: none;
 }
 
-.blankrefer {
-  position: relative;
-  top: -50px;
+html body#home-page div#blankrefer {
+  padding-top: 100px;
 }
 /*Navigation Menu CSS */
 nav {
@@ -138,7 +137,9 @@ nav .menu-btn,
 nav .menu-btn {
   color: rgb(82, 182, 154);
 }
-
+html body#meal-planner div#blankrefer {
+  padding-top: 100px;
+}
 /* Responsive Media Query CSS */
 @media (max-width: 750px) {
   nav .navbar .menu {
@@ -180,9 +181,4 @@ nav .menu-btn {
   .home .text .text-one {
     font-size: 55px;
   }
-}
-
-#meal-planner .blankrefer {
-  position: relative;
-  top: -50px;
 }
