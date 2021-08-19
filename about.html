@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodbrain</title>
     <!-- FontAwesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
 
     <link id="theme" rel="stylesheet" type="text/css" href="styleLight.css" />
     <link id="theme" rel="stylesheet" type="text/css" href="about.css" />
@@ -26,7 +29,7 @@
           <!-- <div class= "navlogo"><img src="images/logoTransparent.png" alt="Foodbrain Logo"/></div> -->
           <!-- The Logo Name is temporary cuz its real hard to size the freaking logo image in a nav bar -->
           <div class="logo">
-            <img src="images/logoTheme.png" alt="Foodbrain Logo" style="width: 50px;" id="brain"/>
+            <img src="images/logoTheme.png" alt="Foodbrain Logo" style="width: 50px" id="brain"/>
             <a href="index.html">Foodbrain</a>
           </div>
           <ul class="menu">
@@ -37,79 +40,88 @@
             <li><a href="#blog">Blog</a></li>
             <div class="cancel-btn"><i class="fas fa-times"></i></div>
           </ul>
-          <div class="login">
+          <div class="iconz">
             <a href="#login"><i class="fas fa-sign-in-alt"></i></a>
+            <a href="#darkmode"><i class="fas fa-moon"></i></a>  
           </div>
         </div>
         <div class="menu-btn"><i class="fas fa-bars"></i></div>
       </nav>
     </header>
+    <main>
+      <div id="blankrefer"></div>
 
-    <div id="blankrefer"></div>
+      <!-- Team Roles -->
+      <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Some text about who we are and what we do.</p>
+      </div>
 
-    <!-- Team Roles -->
-    <div class="about-section">
-      <h1>About Us Page</h1>
-      <p>Some text about who we are and what we do.</p>
-    </div>
+      <h2 id="ourteamtext">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img
+              src="Images/team/richard.jpg"
+              class="teamphoto"
+              alt="Richard"
+            />
+            <div class="container">
+              <h2 class="names">Richard Perez</h2>
+              <p class="title">PROJECT LEAD</p>
+              <p>Scholars' Academy</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
 
-    <h2 id="ourteamtext">Our Team</h2>
-    <div class="row">
-      <div class="column">
-       <div class="card">
-         <img src="Images/team/richard.jpg" class="teamphoto" alt="Richard">
-          <div class="container">
-            <h2 class="names">Richard Perez</h2>
-            <p class="title">PROJECT LEAD</p>
-            <p>Scholars' Academy</p>
-            <p><button class="button">Contact</button></p>
+        <div class="column">
+          <div class="card">
+            <img src="/images/team/nirath.jpg" class="teamphoto" alt="Nirath" />
+            <div class="container">
+              <h2 class="names">Nirath Hussan</h2>
+              <p class="title">WEB DESIGNER/DEVELOPER</p>
+              <p>Manhattan Center for Science and Mathematics</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="Images/team/eden.png" class="teamphoto" alt="Eden" />
+            <div class="container">
+              <h2 class="names">Eden Osselin</h2>
+              <p class="title">RESEARCHER</p>
+              <p>Medgar Evers College Preparatory School</p>
+              <div><button class="button">Contact</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="Images/team/jaylen.jpg" class="teamphoto" alt="Jaylen" />
+            <div class="container">
+              <h2 class="names">Jaylen Klennert</h2>
+              <p class="title">COORDINATOR</p>
+              <p>Loch Raven High School</p>
+              <p><button class="button">Contact</button></p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="column">
-        <div class="card">
-          <img src="/images/team/nirath.jpg" class="teamphoto" alt="Nirath">
-          <div class="container">
-            <h2 class="names">Nirath Hussan</h2>
-            <p class="title">WEB DESIGNER/DEVELOPER</p>
-            <p>Manhattan Center for Science and Mathematics</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
+      <div class="mission-section">
+        <h1>Our Mission</h1>
       </div>
-
-      <div class="column">
-        <div class="card">
-         <img src="Images/team/eden.png" class="teamphoto" alt="Eden">
-          <div class="container">
-            <h2 class="names">Eden Osselin</h2>
-            <p class="title">RESEARCHER</p>
-            <p>Medgar Evers College Preparatory School</p>
-            <div><button class="button">Contact</button></div>
-          </div>
-        </div>
+      <div class="missionstmt">
+        <p>
+          Here at FoodBrain, we strive to create a resource that allows easy
+          access to materials to aid in weight loss and making healthy routines.
+        </p>
       </div>
-
-      <div class="column">
-       <div class="card">
-          <img src="Images/team/jaylen.jpg" class="teamphoto" alt="Jaylen">
-          <div class="container">
-            <h2 class="names">Jaylen Klennert</h2>
-            <p class="title">ORGANIZER/SECRETARY</p>
-            <p>Loch Raven High School</p>
-            <p><button class="button">Contact</button></p>
-         </div>
-       </div>
-      </div>
-    </div>
-
-    <div class="mission-section">
-      <h1>Our Mission</h1>
-    </div>
-    <div class="missionstmt">
-      <p>Here at FoodBrain, we strive to create a resource that allows easy access to materials to aid in weight loss and making healthy routines.</p>
-    </div>
+    </main>
 
     <!-- Footer Section -->
     <footer>

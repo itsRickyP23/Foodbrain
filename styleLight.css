@@ -74,12 +74,12 @@ nav.sticky .navbar .menu li a:hover {
 }
 
 /* Sign In Button */
-.navbar .login a {
+.navbar .iconz a {
   font-size: 40px;
   margin: 0 6px;
   color: rgb(96, 211, 148);
 }
-nav.sticky .navbar .login a {
+nav.sticky .navbar .iconz a {
   color: white;
 }
 
@@ -182,7 +182,7 @@ footer .text span{
     color: rgb(255, 255, 194);
     list-style: none;
   }
-  .navbar .login a {
+  .navbar .iconz a {
     display: none;
   }
   nav .menu-btn,
